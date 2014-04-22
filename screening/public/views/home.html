@@ -1,0 +1,25 @@
+<div ng-if="user">
+  <h1>Welcome, {{user.name}}</h1>
+  <a class="button" href="/logout">Sign out</a>
+
+  <div ui-view></div>
+
+  <h2>My projects</h2>
+  <ul>
+    <li ng-repeat="project in user.projects">
+      <a ng-click="goProject(project.id)">{{project.title}}</a>
+    </li>
+  </ul>
+  <div class="row collapse">
+    <div class="large-6 columns">
+      <input type="text" ng-model="newProjectTitle" placeholder="New project title here...">
+    </div>
+    <div class="large-2 columns end">
+      <button class="button postfix" ng-click="createProject(newProjectTitle)">New project</button>
+    </div>
+  </div>
+</div>
+<div ng-if="!user">
+  <h1>Please log in</h1>
+  <a class="button" href="/auth/google">Sign in with Google</a>
+</div>

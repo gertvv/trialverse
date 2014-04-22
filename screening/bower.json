@@ -1,0 +1,17 @@
+{
+  "name": "screening",
+  "main": "public/js/main.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gertvv/trialverse",
+  "authors": [
+    "Gert van Valkenhoef <g.h.m.van.valkenhoef@rug.nl>"
+  ],
+  "license": "GPL-3",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.2.16",
+    "angular-resource": "~1.2.16",
+    "angular-ui-router": "~0.2.10",
+    "foundation": "~5.2.2"
+  }
+}
