@@ -18,6 +18,9 @@
       <button class="button postfix" ng-click="createProject(newProjectTitle)">New project</button>
     </div>
   </div>
+  <pre>
+    {{ user | json }}
+  </pre>
 </div>
 <div ng-if="!user">
   <h1>Please log in</h1>

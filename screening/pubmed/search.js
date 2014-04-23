@@ -84,4 +84,12 @@ function Search(query_str, pageSize) {
 }
 util.inherits(Search, events.EventEmitter);
 
-module.exports = Search;
+function Count(query_str) {
+  var count = deferred();
+
+  initSearch(query_str).then(function(search) { count.resolve(search.count) });
+
+  return count.promise;
+}
+
+module.exports = { count: Count, search: Search };
