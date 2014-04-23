@@ -18,6 +18,7 @@
     "underscore": "~1.6.0",
     "clone": "~0.1.11",
     "node-persist": "0.0.2",
-    "deferred": "~0.7.0"
+    "deferred": "~0.7.0",
+    "xml-stream": "~0.4.4"
   }
 }
